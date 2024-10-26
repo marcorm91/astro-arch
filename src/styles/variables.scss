@@ -1,0 +1,83 @@
+:root{
+
+    --mp-white: #FFFFFF;
+    --mp-black: #2D2D2D;
+    --mp-primary: #003087;
+    --mp-primary-light: #0A5BD110;
+    --mp-primary-light-2: #003087B3;
+    --mp-secondary: #0A5BD1;
+    --mp-secondary-2: #33599f;
+    --mp-error: #ED3939;
+    --mp-error-light: #FEF7F5;
+    --mp-error-light-2: #FF344C17;
+    --mp-gray-1: #D3D3D3;
+    --mp-gray-2: #FCFCFC;
+    --mp-gray-3: #747474;
+    --mp-darkaqua: #007787;
+    --mp-legend-complete: #FF7C7C;
+    --mp-legend-available: #00778766;
+    --mp-legend-waiting: #FFAE6299;
+    --mp-yellow: #FFC700;
+    --mp-light-green: #25D366;
+
+    --mp-font-family-regular: 'Poppins-Regular';
+    --mp-font-family-semibold: 'Poppins-Semibold';
+    --mp-font-family-thin: 'Poppins-Thin';
+    --mp-font-family-bold: 'Poppins-Bold';
+    --mp-font-family-black: 'Poppins-Black';
+    --mp-font-family-light: 'Poppins-Light';
+    --mp-font-family-medium: 'Poppins-Medium';
+
+    --mp-font-size-2xs: 0.625rem;
+    --mp-font-size-xs: 0.75rem;
+    --mp-font-size-sm: 0.875rem;
+    --mp-font-size-md: 1rem;
+    --mp-font-size-lg: 1.125rem;
+    --mp-font-size-xl: 1.25rem;
+    --mp-font-size-2xl: 1.5rem;
+    --mp-font-size-3xl: 1.75rem;
+    --mp-font-size-4xl: 2rem; 
+    --mp-font-size-5xl: 2.25rem;
+    --mp-font-size-6xl: 2.5rem;
+    --mp-font-size-7xl: 3rem;
+
+    --mp-line-height-0: 0;
+    --mp-line-height-1: 1.5;
+    --mp-line-height-2: 1.4;
+    --mp-line-height-3: 1.2;
+
+    --mp-size-border-radius-00: 0;
+    --mp-size-border-radius-01: 0.25rem;
+    --mp-size-border-radius-02: 0.5rem;
+    --mp-size-border-radius-03: 1rem;
+    --mp-size-border-radius-04: 50%;
+
+    --mp-border-width-00: 0;
+    --mp-border-width-01: 0.0625rem;
+    --mp-border-width-02: 0.125rem;
+    --mp-border-width-03: 0.25rem;
+    --mp-border-width-04: 0.5rem;
+
+    --mp-box-shadow-100: 0 0.375rem 0.375rem 0 rgba(0, 83, 125, 0.1);
+    --mp-box-shadow-200: 0 0.75rem 0.75rem 0 rgba(0, 83, 125, 0.1);
+    --mp-box-shadow-300: 0 1.5rem 1.5rem 0 rgba(0, 83, 125, 0.1);
+    --mp-box-shadow-400: 0 3rem 3rem 0 rgba(0, 83, 125, 0.1);
+    --mp-box-shadow-500: 0 0.3125rem 0.625rem 0 rgba(0, 0, 0, 0.12);
+
+    --mp-space-unit: 0.5rem;
+    --mp-spacing-00: calc(var(--mp-space-unit) * 0); // 0
+    --mp-spacing-01: calc(var(--mp-space-unit) / 4); // 0.125
+    --mp-spacing-02: calc(var(--mp-space-unit) / 2); // 0.25
+    --mp-spacing-03: calc(var(--mp-space-unit) * 1); // 0.5
+    --mp-spacing-04: calc(var(--mp-space-unit) * 2); // 1
+    --mp-spacing-05: calc(var(--mp-space-unit) * 3); // 1.5
+    --mp-spacing-06: calc(var(--mp-space-unit) * 4); // 2
+    --mp-spacing-07: calc(var(--mp-space-unit) * 5); // 2.5
+    --mp-spacing-08: calc(var(--mp-space-unit) * 6); // 3
+    --mp-spacing-09: calc(var(--mp-space-unit) * 12); // 6
+    --mp-spacing-10: calc(var(--mp-space-unit) * 24); // 12
+
+    --width-submenu-header: 15rem;
+    --width-card: 21.8rem;
+
+}

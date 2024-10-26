@@ -1,0 +1,11 @@
+// Variables
+@use "variables";
+
+// Generic
+@use "generic/mixins";
+@use "generic/normalize";
+@use "generic/general";
+@use "generic/fonts";
+
+// Override Liferay styles
+@use "generic/liferay-custom";

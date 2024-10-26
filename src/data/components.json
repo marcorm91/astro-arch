@@ -1,0 +1,22 @@
+{
+    "components": [
+        {
+            "name": "[0] Colors",
+            "path": "",
+            "docs": "docs/colors.html",
+            "status": "done"
+        },
+        {
+            "name": "[0] Icons",
+            "path": "",
+            "docs": "docs/icons.html",
+            "status": "done"
+        },
+        {
+            "name": "[1] Buttons",
+            "path": "/src/components/Button/button.astro",
+            "docs": "docs/button.html",
+            "status": "done"
+        }
+    ]
+}

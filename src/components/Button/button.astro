@@ -1,0 +1,39 @@
+---
+import "./button.scss";
+
+interface Props {
+  tag: "a" | "button";
+  type?: "primary" | "secondary" | "terciary" | "none";
+  href?: string;
+  disabled?: boolean;
+  size?: 'small';
+  class?: string;
+  uppercase?: boolean;
+  id?: string;
+  ariaLabel?: string;
+  title?: string;
+}
+
+const { tag, href, type = "primary", disabled, size, uppercase, class: className, id, ariaLabel, title } = Astro.props;
+const Tag = tag;
+---
+
+<Tag
+  href={href}
+  id={id}
+  aria-label={ariaLabel}
+  title={title}
+  {disabled}
+  class:list={[
+    "button",
+    { "button--primary": type === "primary" },
+    { "button--secondary": type === "secondary" },
+    { "button--terciary": type === "terciary" },
+    { "button--none": type === "none" },
+    { "button--small": size === "small"},
+    { "button--uppercase": uppercase},
+    className
+  ]}
+>
+  <slot />
+</Tag>

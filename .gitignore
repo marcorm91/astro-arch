@@ -1,0 +1,10 @@
+node_modules/
+/yarn-error.log
+.pnp/
+.pnp.js
+*.pnp.js
+.cache/
+.DS_Store
+Thumbs.db
+Desktop.ini
+.npm

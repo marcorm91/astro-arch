@@ -1,0 +1,36 @@
+/** Media queries **/
+
+$tablet-width: 48rem; //768
+$laptop-width: 64rem; //1024
+$desktop-width: 90rem; //1440
+$large-desktop-width: 98rem; //1568
+
+@mixin mobile {
+  @media (max-width: #{$tablet-width - 0.0625rem}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+    @media (min-width: #{$tablet-width}) {
+      @content;
+    }
+}
+
+@mixin laptop {
+  @media (min-width: #{$laptop-width}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$desktop-width}) {
+    @content;
+  }
+}
+
+@mixin large-desktop {
+  @media (min-width: #{$large-desktop-width}) {
+    @content;
+  }
+}

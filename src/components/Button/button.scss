@@ -1,0 +1,71 @@
+button, a{
+    &.button{
+        cursor: pointer;
+        border-radius: var(--mp-size-border-radius-03);
+        font-size: var(--mp-font-size-md);
+        padding: calc(3 * var(--mp-spacing-02)) var(--mp-spacing-04);
+        transition: ease-out .15s;
+        display: flex;
+        align-items: center;
+        gap: var(--mp-spacing-03);
+        text-align: center;
+        text-decoration: none;
+        font-family: var(--mp-font-family-semibold);
+        border: none;
+        &--primary{
+            background-color: var(--mp-primary);
+            color: var(--mp-white);
+            &:hover{
+                background-color: var(--mp-secondary);
+            }
+        }
+        &--secondary{
+            background-color: var(--mp-primary);
+            color: var(--mp-white);
+            outline: var(--mp-border-width-01) solid var(--mp-white);
+            &:hover{
+                background-color: var(--mp-white);
+                color: var(--mp-primary);
+            }
+            &:disabled{
+                background-color: var(--mp-white);
+                color: var(--mp-primary);
+            }
+        }
+        &--terciary{
+            background-color: var(--mp-white);
+            color: var(--mp-primary);
+            outline: var(--mp-border-width-01) solid var(--mp-primary);
+            &:hover{
+                background-color: var(--mp-primary-light);
+            }
+        }
+        &--none{
+            background-color: transparent;  
+            border-radius: var(--mp-size-border-radius-00);
+        }
+        &--small{
+            font-size: var(--mp-font-size-sm);
+            padding: var(--mp-spacing-03) var(--mp-spacing-04);
+            font-family: var(--mp-font-family-medium);
+        }
+        &--uppercase{
+            text-transform: uppercase;
+        }
+        &:disabled{
+            pointer-events: none;
+            opacity: .3;
+        }
+    }
+}
+
+a:not(.button){
+    font-size: var(--mp-font-size-sm);
+    color: var(--mp-black);
+    transition: ease-out .15s;
+    border-radius: var(--mp-size-border-radius-00);
+    &:hover{
+        color: var(--mp-secondary);
+        text-decoration: none;
+    }
+}

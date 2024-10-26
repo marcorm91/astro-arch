@@ -1,0 +1,178 @@
+---
+layout: ../../layouts/Docs.astro
+---
+import Button from '../../components/Button/button.astro'
+import Icon from '../../components/Icon/icon.astro'
+
+# Buttons
+
+## Primary buttons
+
+See example:
+
+<div class="component-container horizontal items-center">
+    <div class="flex flex-wrap gap-8">
+        <Button tag="button">Button primary</Button>
+        <Button tag="button" disabled>Button primary</Button>
+        <Button tag="button"><Icon name="download" /> Button primary</Button>
+        <Button tag="button" disabled><Icon name="download" /> Button primary</Button>
+        <Button tag="button"><Icon name="search" /></Button>
+        <Button tag="button" disabled><Icon name="search" /></Button>
+    </div>
+</div>
+
+HTML code:
+
+```html
+<button class="button button--primary">Button primary</button>
+
+<button class="button button--primary" disabled>Button primary</button>
+
+<button class="button button--primary">
+  <svg width="24" height="24" viewBox="0 0 16 16" data-icon="download">
+    <symbol id="ai:local:download"><path fill="currentColor" d="m8 11.789-4.27-4.27 1.055-1.084L7.25 8.9V.5h1.5v8.4l2.465-2.465 1.054 1.084L8 11.79ZM2.308 15.5c-.505 0-.933-.175-1.283-.525A1.745 1.745 0 0 1 .5 13.692v-2.711H2v2.711c0 .077.032.148.096.212a.294.294 0 0 0 .212.096h11.384a.294.294 0 0 0 .212-.096.294.294 0 0 0 .096-.212v-2.711h1.5v2.711c0 .505-.175.933-.525 1.283-.35.35-.778.525-1.283.525H2.308Z"></path></symbol><use xlink:href="#ai:local:download"></use>    
+  </svg> Button primary
+</button>
+
+<button class="button button--primary" disabled>
+  <svg width="24" height="24" viewBox="0 0 16 16" data-icon="download">
+    <symbol id="ai:local:download"><path fill="currentColor" d="m8 11.789-4.27-4.27 1.055-1.084L7.25 8.9V.5h1.5v8.4l2.465-2.465 1.054 1.084L8 11.79ZM2.308 15.5c-.505 0-.933-.175-1.283-.525A1.745 1.745 0 0 1 .5 13.692v-2.711H2v2.711c0 .077.032.148.096.212a.294.294 0 0 0 .212.096h11.384a.294.294 0 0 0 .212-.096.294.294 0 0 0 .096-.212v-2.711h1.5v2.711c0 .505-.175.933-.525 1.283-.35.35-.778.525-1.283.525H2.308Z"></path></symbol><use xlink:href="#ai:local:download"></use>    
+  </svg> Button primary
+</button>
+
+<button class="button button--primary">
+  <svg width="24" height="24" viewBox="0 0 25 25" data-icon="search">
+    <symbol id="ai:local:search"><path fill="currentColor" d="m23.132 24.078-8.768-8.768a7.98 7.98 0 0 1-2.408 1.353 8.271 8.271 0 0 1-2.817.488c-2.386 0-4.405-.826-6.058-2.478C1.43 13.02.603 11.002.603 8.616c0-2.385.826-4.404 2.478-6.058C4.733.904 6.75.078 9.137.078s4.405.826 6.059 2.478c1.653 1.653 2.48 3.672 2.48 6.058a8.19 8.19 0 0 1-.502 2.857 7.984 7.984 0 0 1-1.34 2.367l8.769 8.768-1.472 1.472Zm-13.993-9.02c1.8 0 3.323-.625 4.57-1.873 1.25-1.248 1.874-2.772 1.874-4.57 0-1.8-.625-3.323-1.873-4.571-1.248-1.249-2.772-1.873-4.57-1.873-1.8 0-3.323.624-4.571 1.873-1.249 1.248-1.873 2.772-1.873 4.57 0 1.799.624 3.323 1.873 4.57 1.248 1.25 2.772 1.874 4.57 1.874Z"></path></symbol><use xlink:href="#ai:local:search"></use>
+  </svg>
+</button>
+
+<button class="button button--primary" disabled>
+  <svg width="24" height="24" viewBox="0 0 25 25" data-icon="search">
+    <symbol id="ai:local:search"><path fill="currentColor" d="m23.132 24.078-8.768-8.768a7.98 7.98 0 0 1-2.408 1.353 8.271 8.271 0 0 1-2.817.488c-2.386 0-4.405-.826-6.058-2.478C1.43 13.02.603 11.002.603 8.616c0-2.385.826-4.404 2.478-6.058C4.733.904 6.75.078 9.137.078s4.405.826 6.059 2.478c1.653 1.653 2.48 3.672 2.48 6.058a8.19 8.19 0 0 1-.502 2.857 7.984 7.984 0 0 1-1.34 2.367l8.769 8.768-1.472 1.472Zm-13.993-9.02c1.8 0 3.323-.625 4.57-1.873 1.25-1.248 1.874-2.772 1.874-4.57 0-1.8-.625-3.323-1.873-4.571-1.248-1.249-2.772-1.873-4.57-1.873-1.8 0-3.323.624-4.571 1.873-1.249 1.248-1.873 2.772-1.873 4.57 0 1.799.624 3.323 1.873 4.57 1.248 1.25 2.772 1.874 4.57 1.874Z"></path></symbol><use xlink:href="#ai:local:search"></use>
+  </svg>
+</button>
+```
+
+## Secondary buttons
+
+See example:
+
+<div class="component-container horizontal items-center">
+    <div class="flex flex-wrap" style="background-color: var(--mp-primary);">
+        <div class="p-4">
+            <Button tag="button" type='secondary'>Button secondary</Button>
+        </div>
+        <div class="p-4">
+            <Button tag="button" type='secondary' disabled>Button secondary</Button>
+        </div>
+        <div class="p-4">
+            <Button tag="button" type="secondary"><Icon name="download" />Button secondary</Button>
+        </div>
+        <div class="p-4">
+            <Button tag="button" type="secondary" disabled><Icon name="download" />Button secondary</Button>
+        </div>
+        <div class="p-4">
+            <Button tag="button" type="secondary"><Icon name="search" /></Button>
+        </div>
+        <div class="p-4">
+            <Button tag="button" type="secondary" disabled><Icon name="search" /></Button>
+        </div>
+    </div>
+</div>
+
+```html
+<button class="button button--secondary">Button secondary</button>
+
+<button class="button button--secondary" disabled>Button secondary</button>
+
+<button class="button button--secondary">
+  <svg width="24" height="24" viewBox="0 0 16 16" data-icon="download">
+    <symbol id="ai:local:download"><path fill="currentColor" d="m8 11.789-4.27-4.27 1.055-1.084L7.25 8.9V.5h1.5v8.4l2.465-2.465 1.054 1.084L8 11.79ZM2.308 15.5c-.505 0-.933-.175-1.283-.525A1.745 1.745 0 0 1 .5 13.692v-2.711H2v2.711c0 .077.032.148.096.212a.294.294 0 0 0 .212.096h11.384a.294.294 0 0 0 .212-.096.294.294 0 0 0 .096-.212v-2.711h1.5v2.711c0 .505-.175.933-.525 1.283-.35.35-.778.525-1.283.525H2.308Z"></path></symbol><use xlink:href="#ai:local:download"></use>    
+  </svg> Button secondary
+</button>
+
+<button class="button button--secondary" disabled>
+  <svg width="24" height="24" viewBox="0 0 16 16" data-icon="download">
+    <symbol id="ai:local:download"><path fill="currentColor" d="m8 11.789-4.27-4.27 1.055-1.084L7.25 8.9V.5h1.5v8.4l2.465-2.465 1.054 1.084L8 11.79ZM2.308 15.5c-.505 0-.933-.175-1.283-.525A1.745 1.745 0 0 1 .5 13.692v-2.711H2v2.711c0 .077.032.148.096.212a.294.294 0 0 0 .212.096h11.384a.294.294 0 0 0 .212-.096.294.294 0 0 0 .096-.212v-2.711h1.5v2.711c0 .505-.175.933-.525 1.283-.35.35-.778.525-1.283.525H2.308Z"></path></symbol><use xlink:href="#ai:local:download"></use>    
+  </svg> Button secondary
+</button>
+
+<button class="button button--secondary">
+    <svg width="24" height="24" viewBox="0 0 25 25" data-icon="search">
+      <symbol id="ai:local:search"><path fill="currentColor" d="m23.132 24.078-8.768-8.768a7.98 7.98 0 0 1-2.408 1.353 8.271 8.271 0 0 1-2.817.488c-2.386 0-4.405-.826-6.058-2.478C1.43 13.02.603 11.002.603 8.616c0-2.385.826-4.404 2.478-6.058C4.733.904 6.75.078 9.137.078s4.405.826 6.059 2.478c1.653 1.653 2.48 3.672 2.48 6.058a8.19 8.19 0 0 1-.502 2.857 7.984 7.984 0 0 1-1.34 2.367l8.769 8.768-1.472 1.472Zm-13.993-9.02c1.8 0 3.323-.625 4.57-1.873 1.25-1.248 1.874-2.772 1.874-4.57 0-1.8-.625-3.323-1.873-4.571-1.248-1.249-2.772-1.873-4.57-1.873-1.8 0-3.323.624-4.571 1.873-1.249 1.248-1.873 2.772-1.873 4.57 0 1.799.624 3.323 1.873 4.57 1.248 1.25 2.772 1.874 4.57 1.874Z"></path></symbol><use xlink:href="#ai:local:search"></use>
+    </svg>
+</button>
+
+<button class="button button--secondary" disabled>
+    <svg width="24" height="24" viewBox="0 0 25 25" data-icon="search">
+      <symbol id="ai:local:search"><path fill="currentColor" d="m23.132 24.078-8.768-8.768a7.98 7.98 0 0 1-2.408 1.353 8.271 8.271 0 0 1-2.817.488c-2.386 0-4.405-.826-6.058-2.478C1.43 13.02.603 11.002.603 8.616c0-2.385.826-4.404 2.478-6.058C4.733.904 6.75.078 9.137.078s4.405.826 6.059 2.478c1.653 1.653 2.48 3.672 2.48 6.058a8.19 8.19 0 0 1-.502 2.857 7.984 7.984 0 0 1-1.34 2.367l8.769 8.768-1.472 1.472Zm-13.993-9.02c1.8 0 3.323-.625 4.57-1.873 1.25-1.248 1.874-2.772 1.874-4.57 0-1.8-.625-3.323-1.873-4.571-1.248-1.249-2.772-1.873-4.57-1.873-1.8 0-3.323.624-4.571 1.873-1.249 1.248-1.873 2.772-1.873 4.57 0 1.799.624 3.323 1.873 4.57 1.248 1.25 2.772 1.874 4.57 1.874Z"></path></symbol><use xlink:href="#ai:local:search"></use>
+    </svg>
+</button>
+```
+
+## Terciary buttons
+
+See example:
+
+<div class="component-container horizontal items-center">
+      <div class="flex flex-wrap gap-8">
+        <Button tag="button" type='terciary'>Button terciary</Button>
+        <Button tag="button" type='terciary' disabled>Button terciary</Button>
+        <Button tag="button" type="terciary"><Icon name="download" />Button terciary</Button>
+        <Button tag="button" type="terciary" disabled><Icon name="download" />Button terciary</Button>
+        <Button tag="button" type="terciary"><Icon name="search" /></Button>
+        <Button tag="button" type="terciary" disabled><Icon name="search" /></Button>
+    </div>
+</div>
+
+```html
+<button class="button button--terciary">Button terciary</button>
+
+<button class="button button--terciary" disabled>Button terciary</button>
+
+<button class="button button--terciary">
+  <svg width="24" height="24" viewBox="0 0 16 16" data-icon="download">
+    <symbol id="ai:local:download"><path fill="currentColor" d="m8 11.789-4.27-4.27 1.055-1.084L7.25 8.9V.5h1.5v8.4l2.465-2.465 1.054 1.084L8 11.79ZM2.308 15.5c-.505 0-.933-.175-1.283-.525A1.745 1.745 0 0 1 .5 13.692v-2.711H2v2.711c0 .077.032.148.096.212a.294.294 0 0 0 .212.096h11.384a.294.294 0 0 0 .212-.096.294.294 0 0 0 .096-.212v-2.711h1.5v2.711c0 .505-.175.933-.525 1.283-.35.35-.778.525-1.283.525H2.308Z"></path></symbol><use xlink:href="#ai:local:download"></use>    
+  </svg> Button terciary
+</button>
+
+<button class="button button--terciary" disabled>
+  <svg width="24" height="24" viewBox="0 0 16 16" data-icon="download">
+    <symbol id="ai:local:download"><path fill="currentColor" d="m8 11.789-4.27-4.27 1.055-1.084L7.25 8.9V.5h1.5v8.4l2.465-2.465 1.054 1.084L8 11.79ZM2.308 15.5c-.505 0-.933-.175-1.283-.525A1.745 1.745 0 0 1 .5 13.692v-2.711H2v2.711c0 .077.032.148.096.212a.294.294 0 0 0 .212.096h11.384a.294.294 0 0 0 .212-.096.294.294 0 0 0 .096-.212v-2.711h1.5v2.711c0 .505-.175.933-.525 1.283-.35.35-.778.525-1.283.525H2.308Z"></path></symbol><use xlink:href="#ai:local:download"></use>    
+  </svg> Button terciary
+</button>
+
+<button class="button button--terciary">
+    <svg width="24" height="24" viewBox="0 0 25 25" data-icon="search">
+      <symbol id="ai:local:search"><path fill="currentColor" d="m23.132 24.078-8.768-8.768a7.98 7.98 0 0 1-2.408 1.353 8.271 8.271 0 0 1-2.817.488c-2.386 0-4.405-.826-6.058-2.478C1.43 13.02.603 11.002.603 8.616c0-2.385.826-4.404 2.478-6.058C4.733.904 6.75.078 9.137.078s4.405.826 6.059 2.478c1.653 1.653 2.48 3.672 2.48 6.058a8.19 8.19 0 0 1-.502 2.857 7.984 7.984 0 0 1-1.34 2.367l8.769 8.768-1.472 1.472Zm-13.993-9.02c1.8 0 3.323-.625 4.57-1.873 1.25-1.248 1.874-2.772 1.874-4.57 0-1.8-.625-3.323-1.873-4.571-1.248-1.249-2.772-1.873-4.57-1.873-1.8 0-3.323.624-4.571 1.873-1.249 1.248-1.873 2.772-1.873 4.57 0 1.799.624 3.323 1.873 4.57 1.248 1.25 2.772 1.874 4.57 1.874Z"></path></symbol><use xlink:href="#ai:local:search"></use>
+    </svg>
+</button>
+
+<button class="button button--terciary" disabled>
+    <svg width="24" height="24" viewBox="0 0 25 25" data-icon="search">
+      <symbol id="ai:local:search"><path fill="currentColor" d="m23.132 24.078-8.768-8.768a7.98 7.98 0 0 1-2.408 1.353 8.271 8.271 0 0 1-2.817.488c-2.386 0-4.405-.826-6.058-2.478C1.43 13.02.603 11.002.603 8.616c0-2.385.826-4.404 2.478-6.058C4.733.904 6.75.078 9.137.078s4.405.826 6.059 2.478c1.653 1.653 2.48 3.672 2.48 6.058a8.19 8.19 0 0 1-.502 2.857 7.984 7.984 0 0 1-1.34 2.367l8.769 8.768-1.472 1.472Zm-13.993-9.02c1.8 0 3.323-.625 4.57-1.873 1.25-1.248 1.874-2.772 1.874-4.57 0-1.8-.625-3.323-1.873-4.571-1.248-1.249-2.772-1.873-4.57-1.873-1.8 0-3.323.624-4.571 1.873-1.249 1.248-1.873 2.772-1.873 4.57 0 1.799.624 3.323 1.873 4.57 1.248 1.25 2.772 1.874 4.57 1.874Z"></path></symbol><use xlink:href="#ai:local:search"></use>
+    </svg>
+</button>
+```
+
+## Primary / secondary / terciary buttons with tag 'a'
+
+See example:
+
+<div class="component-container horizontal items-center">
+      <div class="flex flex-wrap items-center gap-8">
+        <Button tag="a" href="#" type='primary'>Button terciary</Button>
+        <div class="p-4" style="background-color: var(--mp-primary)">
+          <Button tag="a" href="#" type='secondary'>Button secondary</Button>
+        </div>
+        <Button tag="a" href="#" type="terciary">Button terciary</Button>
+    </div>
+</div>
+
+```html
+<a class="button button--primary" href="#">Button primary</a>
+
+<a class="button button--secondary" href="#">Button secondary</a>
+
+<a class="button button--terciary" href="#">Button terciary</a>
+```

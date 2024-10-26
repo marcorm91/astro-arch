@@ -1,0 +1,12 @@
+{
+  "pages": [
+    {
+      "title": "Home page",
+      "pageName": "home",
+      "path": "src/pages/home.astro",
+      "slug": "home/index.html",
+      "status": "done",
+      "accessibility": true
+    }
+  ]
+}
